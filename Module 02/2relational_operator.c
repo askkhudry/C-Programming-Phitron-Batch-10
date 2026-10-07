@@ -1,0 +1,6 @@
+// less than --  "<"
+// less or equal than -- "<="
+// greater than -- ">"
+// greter or equal than -- ">="
+// equals to -- "=="
+// not equals to -- "!="
