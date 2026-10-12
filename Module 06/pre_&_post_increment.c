@@ -20,16 +20,17 @@
 //     return 0;
 // }
 
-// #include <stdio.h>
-// int main()
-// {
-//     int a = 10;
-//     int y = a++;
-//     int z = y;
-//     printf("%d", ++z);//print hobe 11
+#include <stdio.h>
+int main()
+{
+    int a = 10;
+    int y = a++;
+    printf("%d %d\n", a, y);
+    int z = y;
+    printf("%d", ++z); // print hobe 11
 
-//     return 0;
-// }
+    return 0;
+}
 
 // #include <stdio.h>
 // int main()
@@ -42,13 +43,13 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-int main()
-{
-    int a = 10;
-    --a;
-    printf("%d\n", a--); // print hobe 9
-    printf("%d",a);//print hobr 8
+// #include <stdio.h>
+// int main()
+// {
+//     int a = 10;
+//     --a;
+//     printf("%d\n", a--); // print hobe 9
+//     printf("%d",a);//print hobr 8
 
-    return 0;
-}
+//     return 0;
+// }
