@@ -1,38 +1,26 @@
 #include <stdio.h>
 
-void distinct(int n, int a[])
+void unick_number(int a[], int n)
 {
-    int count = 1;
-    for (int i = 0; i < n - 1; i++)
+    int distinct = 0;
+    for (int i = 0; i < n; i++)
     {
+        int unick = 1;
         for (int j = i + 1; j < n; j++)
         {
-            if (a[i] > a[j])
+            if (a[i] == a[j])
             {
-                int temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
+                unick = 0;
+                break;
             }
         }
-    }
-    for (int i = 1; i < n; i++)
-    {
-        if (a[i] != a[i - 1])
+        if (unick == 1)
         {
-            count++;
+            distinct++;
         }
     }
-
-    if (n == 0)
-    {
-        printf("0");
-    }
-    else
-    {
-        printf("%d\n", count);
-    }
+    printf("%d", distinct);
 }
-
 int main()
 {
     int n;
@@ -42,22 +30,71 @@ int main()
     {
         scanf("%d", &a[i]);
     }
-    distinct(n, a);
+    unick_number(a, n);
+
     return 0;
 }
-// void printArray(int arr[], int n)
+
+// #include <stdio.h>
+
+// void distinct(int n, int a[])
 // {
-//     for(int i = 0; i < n; i++)
+//     int count = 1;
+//     for (int i = 0; i < n - 1; i++)
 //     {
-//         printf("%d ", arr[i]);
+//         for (int j = i + 1; j < n; j++)
+//         {
+//             if (a[i] > a[j])
+//             {
+//                 int temp = a[i];
+//                 a[i] = a[j];
+//                 a[j] = temp;
+//             }
+//         }
+//     }
+//     for (int i = 1; i < n; i++)
+//     {
+//         if (a[i] != a[i - 1])
+//         {
+//             count++;
+//         }
+//     }
+
+//     if (n == 0)
+//     {
+//         printf("0");
+//     }
+//     else
+//     {
+//         printf("%d\n", count);
 //     }
 // }
 
 // int main()
 // {
-//     int arr[] = {10, 20, 30, 40, 50};
-
-//     printArray(arr, 5);
-
+//     int n;
+//     scanf("%d", &n);
+//     int a[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d", &a[i]);
+//     }
+//     distinct(n, a);
 //     return 0;
 // }
+// // void printArray(int arr[], int n)
+// // {
+// //     for(int i = 0; i < n; i++)
+// //     {
+// //         printf("%d ", arr[i]);
+// //     }
+// // }
+
+// // int main()
+// // {
+// //     int arr[] = {10, 20, 30, 40, 50};
+
+// //     printArray(arr, 5);
+
+// //     return 0;
+// // }
