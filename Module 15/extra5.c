@@ -1,0 +1,3 @@
+// how an array finds its 3rd index
+
+// ekta array sob somoy tar first index ke store kore rakhe , orthat array te tar first index er address ta sob somoy store hoye thake kenona array ekta pointer variable, jar jonno array er name tatei tar first index er address ta store kora thake, to jokhon array ke bola hoy je a[3] print koro ba a[3] ke niye kaj koro tokhon muloto array tar first index er sathe 3*4 jog kore, jog kore jei index pay sei index ta niye kaj kore ar sei index tai holo a[3] number index, karon integer array hole 3*4 korbe , character array hole 3*1 korbe etc, cz ekta integer array memory te 4 byte jayga dokhol kore, tai 3 er sathe 4 gun kore sei ghore giye a[3] kaj kore
