@@ -12,13 +12,17 @@ int main()
     {
         if (a[i] == 0)
         {
-            for (int j = i, k = 0; j >= k; j--,k++)
+            for (int j = i - 1, k = 0; j >= k; j--, k++)
             {
                 int temp = a[j];
                 a[j] = a[k];
                 a[k] = temp;
             }
         }
+    }
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", a[i]);
     }
 
     return 0;
