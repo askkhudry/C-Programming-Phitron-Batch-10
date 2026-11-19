@@ -2,7 +2,7 @@
 #include <string.h>
 int main()
 {
-    char s[10001];
+    char s[1000005];
     scanf("%s", s);
     // printf("%s", s);
     int len = strlen(s);
